@@ -1,6 +1,6 @@
 # mi_flutter
 
-A new Flutter project.
+Primer proyecto en conectar en Android Studio en Git.
 
 ## Getting Started
 
