@@ -2,7 +2,7 @@
 
 Primer proyecto en conectar en Android Studio en Git.
 
-## Getting Started
+## Como utilizar
 
 This project is a starting point for a Flutter application.
 
