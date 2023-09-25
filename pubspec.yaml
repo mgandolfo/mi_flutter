@@ -32,6 +32,8 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   flutter_svg: ^2.0.7
+  after_layout: ^1.2.0
+  http: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -68,7 +70,9 @@ flutter:
       - assets/icons/documento-firmado.svg
       - assets/icons/lista-del-portapapeles.svg
       - assets/icons/comprobacion-de-lista.svg
-
+      - assets/icons/cuota.svg
+      - assets/icons/campana.svg
+      - assets/icons/angulo-pequeno-izquierdo.svg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

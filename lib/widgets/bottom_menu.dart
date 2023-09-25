@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:mi_flutter/page/home_page.dart';
+import 'package:mi_flutter/page/perfil_usuario.dart';
 
 class BottomMenuItem {
   final String iconPath, label;
@@ -16,6 +18,7 @@ class BottomMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      /*Probar luego de Expanded*/
       color: Color(0xff00294b),
       padding: EdgeInsets.all(10),
       child: SafeArea(
@@ -24,7 +27,13 @@ class BottomMenu extends StatelessWidget {
           children: List.generate(items.length, (index) {
             final BottomMenuItem item = items[index];
             return CupertinoButton(
-              onPressed: () {},
+              onPressed: () {
+                final route = MaterialPageRoute(
+                    builder: (BuildContext _) => PerfilUsuario(
+                          nombre: homePage.routeName,
+                        ));
+                Navigator.push(context, route);
+              },
               padding: EdgeInsets.zero,
               child: Column(
                 mainAxisSize: MainAxisSize.min,
